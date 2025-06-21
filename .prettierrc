@@ -1,0 +1,9 @@
+{
+  "parser": "typescript",
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "trailingComma": "es5",
+  "endOfLine": "lf"
+}
