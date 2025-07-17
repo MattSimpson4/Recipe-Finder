@@ -1,8 +1,7 @@
 {
   "name": "recipe-finder",
   "version": "1.0.0",
-  "description": "This is a simple recipe finder website built in ReactJS. Once the basics are implemented I'll work on adding in more advanced features like statistic tests and graphing functionality",
-  "main": "index.js",
+  "description": "This is a simple recipe finder website built in ReactJS. It allows users to search for recipes, filter by ingredients, and explore cooking ideas.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite",

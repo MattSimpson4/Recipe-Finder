@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/App.css';
 import { supabase } from './supabaseClient';
 
-export default function App() {
+export default function Home() {
   const [mode, setMode] = useState<null | 'login' | 'signup'>(null);
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -31,18 +31,6 @@ export default function App() {
     }
   };
 
-  useEffect(() => {
-    async function fetchUsers() {
-      const { data, error } = await supabase.from('users').select('*');
-
-      if (error) {
-        console.error('Error fetching users:', error);
-      } else {
-        console.log('Users:', data);
-      }
-    }
-    fetchUsers();
-  }, []);
   return (
     <>
       <div className="Homepage">
@@ -72,7 +60,7 @@ export default function App() {
           </>
         )}
 
-        {mode != null && (
+        {mode !== null && (
           <>
             <form
               onSubmit={(e) => {
