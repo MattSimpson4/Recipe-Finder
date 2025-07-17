@@ -1,7 +1,7 @@
 {
-  "name": "calculator",
+  "name": "recipe-finder",
   "version": "1.0.0",
-  "description": "This is a simple calculator website built in ReactJS. Once the basics are implemented I'll work on adding in more advanced features like statistic tests and graphing functionality",
+  "description": "This is a simple recipe finder website built in ReactJS. Once the basics are implemented I'll work on adding in more advanced features like statistic tests and graphing functionality",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,18 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MattSimpson4/Calculator.git"
+    "url": "git+https://github.com/MattSimpson4/Recipe-Finder.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MattSimpson4/Calculator/issues"
+    "url": "https://github.com/MattSimpson4/Recipe-Finder/issues"
   },
-  "homepage": "https://github.com/MattSimpson4/Calculator#readme",
+  "homepage": "https://github.com/MattSimpson4/Recipe-Finder#readme",
   "dependencies": {
+    "@supabase/supabase-js": "^2.52.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
