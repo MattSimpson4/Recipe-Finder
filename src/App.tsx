@@ -1,14 +1,13 @@
 import React from 'react';
-import './styles/App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Home'; // your existing homepage logic
+import User from './User';
 
 export default function App() {
   return (
-    <>
-      <div className="App">
-        <header className="App-header">
-          <h1>Hello</h1>
-        </header>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/user" element={<User />} />
+    </Routes>
   );
 }
